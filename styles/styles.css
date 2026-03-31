@@ -30,7 +30,7 @@ svg {
 
 .nav {
   flex: 1 1 auto;
-  max-width: 250px;
+  max-width: 400px;
   padding: 20px;
   background-color: hsl(212, 80%, 60%);
   color: #fff;
@@ -88,14 +88,15 @@ li {
 }
 
 .top {
-    padding: 20px;
+    padding: 20px 50px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .search {
     flex: 2 1 250px;
+    max-width: 700px;
     display: flex;
     justify-content: center;
     gap: 15px;
@@ -110,8 +111,15 @@ li {
 
 .user {
     flex: 1 1 auto;
+    max-width: 200px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.user > a > img {
+  border-radius: 50%;
 }
 
 
