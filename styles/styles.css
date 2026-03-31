@@ -213,6 +213,7 @@ img {
   grid-row: 1;
   display: grid;
   align-items: center;
+  font-size: 0.9rem;
 }
 
 .announcement > h2 {
@@ -223,7 +224,7 @@ img {
 .announcement > div {
   background-color: #fff;
   border-radius: 10px;
-  padding: 30px 20px;
+  padding: 30px 40px;
 }
 
 .announcement > div > div:nth-child(even) {
