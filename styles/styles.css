@@ -1,3 +1,8 @@
+:root {
+  --navbar-background-color: hsl(212, 80%, 60%);
+  --search-background-color: hsl(212, 60%, 85%);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -17,8 +22,8 @@ body {
 }
 
 svg {
-    width: 25px;
-    height: auto;
+  width: 25px;
+  height: auto;
 }
 
 .container {
@@ -32,7 +37,7 @@ svg {
   flex: 1 1 auto;
   max-width: 400px;
   padding: 20px;
-  background-color: hsl(212, 80%, 60%);
+  background-color: var(--navbar-background-color);
   color: #fff;
 
   display: flex;
@@ -82,44 +87,79 @@ li {
 
 .main {
   flex: 3 1 auto;
-  
+
   display: flex;
   flex-direction: column;
 }
 
+.header {
+  padding: 20px 50px;
+}
+
 .top {
-    padding: 20px 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .search {
-    flex: 2 1 250px;
-    max-width: 700px;
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+  flex: 2 1 250px;
+  max-width: 700px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 .search > input[type="text"] {
-    flex: 1 1 250px;
-    border-radius: 15px;
-    background-color: #e3e3e3;
-    border: 0px;
+  flex: 1 1 250px;
+  border-radius: 15px;
+  background-color: var(--search-background-color);
+  border: 0px;
 }
 
 .user {
-    flex: 1 1 auto;
-    max-width: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  flex: 1 1 auto;
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
 }
 
-.user > a > img {
+img {
   border-radius: 50%;
 }
 
+.user-actions {
+  margin-top: 20px;
 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.welcome-user {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.welcome-user > div > p:last-child{
+  margin-top: 0.2em;
+  font-size: 1.5rem;
+}
+
+.welcome-user > a > img {
+  width: 5em;
+}
+
+.actions > button {
+  font-size: 1.2rem;
+  width: 100px;
+  height: 40px;
+  border-radius: 30px;
+  margin-left: 20px;
+  background-color: var(--navbar-background-color);
+  color: #fff;
+  border: none;
+}
