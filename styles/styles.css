@@ -1,6 +1,8 @@
 :root {
   --navbar-background-color: hsl(212, 80%, 60%);
-  --search-background-color: hsl(212, 60%, 85%);
+  --search-background-color: hsla(213, 57%, 91%, 0.897);
+  --posts-border-color: hsl(212, 34%, 82%);
+  --card-strip: hsl(46, 100%, 67%);
 }
 
 * {
@@ -163,3 +165,42 @@ img {
   color: #fff;
   border: none;
 }
+
+.cards {
+  flex: 2 0 auto;
+  background-color: var(--search-background-color);
+  border-top: 5px solid var(--posts-border-color);
+  padding: 20px;
+  padding-bottom: 50px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.projects {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+
+.title {
+  grid-column: 1 / -1;
+  align-self: center;
+}
+
+.card { 
+  border-left: 10px solid var(--card-strip);
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: rgb(184, 184, 184) 4px 4px 5px;
+}
+
+.card > p {
+  font-weight: 500;
+}
+
