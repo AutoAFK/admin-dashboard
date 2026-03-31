@@ -16,6 +16,11 @@ body {
   font-size: 16px;
 }
 
+svg {
+    width: 25px;
+    height: auto;
+}
+
 .container {
   height: 100%;
   width: 100%;
@@ -77,4 +82,36 @@ li {
 
 .main {
   flex: 3 1 auto;
+  
+  display: flex;
+  flex-direction: column;
 }
+
+.top {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.search {
+    flex: 2 1 250px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.search > input[type="text"] {
+    flex: 1 1 250px;
+    border-radius: 15px;
+    background-color: #e3e3e3;
+    border: 0px;
+}
+
+.user {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+}
+
+
